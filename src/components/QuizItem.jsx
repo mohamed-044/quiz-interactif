@@ -11,15 +11,13 @@ function QuestionItem({ question }) {
 
   return (
     <>
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="me-4">
         <strong>{question.question}</strong>
         {question.validated && (
-          <span className={question.validated === 'juste' ? 'text-success' : 'text-danger'}>
-            {question.validated.toUpperCase()}
-          </span>
+          <span className={question.validated === 'juste' ? 'text-success' : 'text-danger'}></span>
         )}
       </div>
-      <div className="mt-2">
+      <div className="me-2">
         <p>Réponse : {question.answer}</p>
         <Button variant="success" className="me-2" onClick={() => handleValidation('juste')}
          disabled={question.validated !== null}> Juste </Button>
