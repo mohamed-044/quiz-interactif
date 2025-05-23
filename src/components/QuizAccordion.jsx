@@ -11,21 +11,7 @@ function QuizAccordion({ selectedCategory }) {
   return (
     <Accordion>
       {filtered.map((q, index) => (
-        <Accordion.Item eventKey={index.toString()} key={q.id}>
-          <Accordion.Header>
-            <div className="d-flex justify-content-between align-items-center w-100">
-                <span>{q.question}</span>
-                {q.validated && (
-                <span className={`${q.validated === 'juste' ? 'text-success' : 'text-danger'}`}>
-                    {q.validated.toUpperCase()}
-                </span>
-                )}
-            </div>
-          </Accordion.Header>
-          <Accordion.Body>
-            <QuestionItem question={q} />
-          </Accordion.Body>
-        </Accordion.Item>
+         <QuestionItem key={q.id} question={q} eventKey={index.toString()} />
       ))}
     </Accordion>
   );
