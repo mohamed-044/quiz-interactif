@@ -20,25 +20,25 @@ function App() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Quel est la valeur aproximative de pi ?</Accordion.Header>
         <Accordion.Body>
-          Réponse
-          <Button variant="success">Juste</Button>
-          <Button variant="danger">Faux</Button>
+          <span className='me-2'>Réponse</span>
+          <Button variant="success" className='me-2'>Juste</Button>
+          <Button variant="danger" className='me-2'>Faux</Button>
         </Accordion.Body>
         <Accordion.Item eventKey="1">
         <Accordion.Header>De combien de planètes est composé le système solaire ?</Accordion.Header>
         <Accordion.Body>
-          Réponse
-          <Button variant="success">Juste</Button>
-          <Button variant="danger">Faux</Button>
+          <span className='me-2'>Réponse</span>
+          <Button variant="success" className='me-2'>Juste</Button>
+          <Button variant="danger" className='me-2'>Faux</Button>
         </Accordion.Body>
       </Accordion.Item>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>Quel est la date de la révolution française ?</Accordion.Header>
         <Accordion.Body>
-          Réponse
-          <Button variant="success">Juste</Button>
-          <Button variant="danger">Faux</Button>
+          <span className='me-2'>Réponse</span>
+          <Button variant="success" className='me-2'>Juste</Button>
+          <Button variant="danger" className='me-2'>Faux</Button>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
