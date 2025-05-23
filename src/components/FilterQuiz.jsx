@@ -1,14 +1,15 @@
 import '../assets/styles/FilterQuiz.css'
-import { Form } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
 
-function FilterQuiz ({ setCategory }) {
-    return (
-        <Form.Select aria-label="category" onChange={(e) => setCategory(e.target.value)} className='mb-4'>  
-        <option value="">Choisir une catégorie</option>
-        <option value="Maths">Maths</option>
-        <option value="Sciences">Sciences</option>
-        <option value="Histoire">Histoire</option>
-        </Form.Select>
-    );
+function FilterQuiz({ onChange }) {
+  return (
+    <Form.Select onChange={e => onChange(e.target.value)} className='mb-4'>
+      <option value="">Toutes les catégories</option>
+      <option value="Math">Math</option>
+      <option value="Science">Science</option>
+      <option value="Histoire">Histoire</option>
+    </Form.Select>
+  );
 }
+
 export default FilterQuiz;
