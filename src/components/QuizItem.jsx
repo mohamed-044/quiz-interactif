@@ -17,7 +17,7 @@ function QuestionItem({ question, eventKey }) {
             <div className="d-flex justify-content-between align-items-center w-100">
                 <span>{question.question}</span>
                 {question.validation && (
-                <span className={`${question.validation === 'juste' ? 'text-success' : 'text-danger'}`}>
+                <span className={question.validation ? 'text-success' : 'text-danger'}>
                     {question.validation ? 'JUSTE' : 'FAUX'}
                 </span>
                 )}
